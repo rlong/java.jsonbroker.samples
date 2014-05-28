@@ -3,7 +3,7 @@
 // Released under the MIT license ( http://opensource.org/licenses/MIT )
 //
 
-package jsonbroker.java.samples.websocket;
+package jsonbroker.samples.websocket;
 
 import java.io.InputStream;
 import java.io.OutputStream;

@@ -3,7 +3,7 @@
 // Released under the MIT license ( http://opensource.org/licenses/MIT )
 //
 
-package jsonbroker.java.samples.websocket;
+package jsonbroker.samples.websocket;
 
 import jsonbroker.library.client.http.web_socket.TextWebSocketBuilder;
 import jsonbroker.library.common.http.web_socket.TextWebSocket;
