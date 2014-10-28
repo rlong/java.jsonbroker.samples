@@ -11,10 +11,9 @@ import java.net.Socket;
 
 import jsonbroker.library.common.http.web_socket.TextWebSocket;
 import jsonbroker.library.common.log.Log;
-import jsonbroker.library.server.http.ConnectionHandler;
-import jsonbroker.library.server.http.ConnectionHandler.Delegate;
+import jsonbroker.library.server.http.ConnectionDelegate;
 
-public class EchoWebSocket implements ConnectionHandler.Delegate {
+public class EchoWebSocket implements ConnectionDelegate {
 	
 	private static Log log = Log.getLog(EchoWebSocket.class);
 
@@ -22,7 +21,7 @@ public class EchoWebSocket implements ConnectionHandler.Delegate {
 	Socket _socket;
 
 	@Override
-	public Delegate processRequest(Socket socket, InputStream inputStream,
+	public ConnectionDelegate processRequest(Socket socket, InputStream inputStream,
 			OutputStream outputStream) {
 		
 		if( _socket != socket ) {
